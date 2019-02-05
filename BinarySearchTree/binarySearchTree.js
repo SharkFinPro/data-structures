@@ -6,7 +6,7 @@ class Node {
     }
 }
 module.exports = class BinarySearchTree {
-    constructor(data) {
+    constructor() {
         this.root = null;
     }
 
