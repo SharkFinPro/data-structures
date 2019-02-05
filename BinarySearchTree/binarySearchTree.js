@@ -1,12 +1,17 @@
-module.exports = class BinarySearchTree {
+class Node {
     constructor(data) {
         this.data = data;
         this.left = null;
         this.right = null;
     }
+}
+module.exports = class BinarySearchTree {
+    constructor(data) {
+        this.root = null;
+    }
 
     insert(data) {
-        let newNode = new BinarySearchTree(data);
+        let newNode = new Node(data);
         if (!this.root) this.root = newNode;
         else this.insertNode(this.root, newNode);
     }
