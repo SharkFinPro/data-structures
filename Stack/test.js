@@ -1,0 +1,11 @@
+const Stack = require('./stack.js');
+const stack = new Stack();
+console.log(stack.isEmpty());
+console.log(stack.pop());
+stack.push(10);
+stack.push(20);
+stack.push(30);
+console.log(stack.printStack());
+console.log(stack.peek());
+console.log(stack.pop());
+console.log(stack.printStack());
