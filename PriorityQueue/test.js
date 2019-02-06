@@ -1,0 +1,15 @@
+const PriorityQueue = require('./priorityQueue.js');
+const priorityQueue = new PriorityQueue();
+console.log(priorityQueue.isEmpty());
+console.log(priorityQueue.front());
+priorityQueue.enqueue(",", 2);
+priorityQueue.enqueue("Hey", 1);
+priorityQueue.enqueue("There", 1);
+priorityQueue.enqueue("It's", 2);
+priorityQueue.enqueue("Nate", 3);
+console.log(priorityQueue.printPQueue());
+console.log(priorityQueue.front().element);
+console.log(priorityQueue.rear().element);
+console.log(priorityQueue.dequeue().element);
+priorityQueue.enqueue("!", 2);
+console.log(priorityQueue.printPQueue());
